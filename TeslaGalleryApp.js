@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function(){
             cellAlign: 'left', //aligns images to left
             contain: true, //make sure slideshow not blank at start or end
             wrapAround: true, //allows slideshow to loop  back to beginning when it reaches end
-            autoPlay: 3000, //automatically changes slides every millisecond (3 seconds)
+            autoPlay: 1000, //automatically changes slides every millisecond (3 seconds)
             pauseAutoPlayOnHover: true //stop changing slides when mouse hovers over the slideshow
         });
     });

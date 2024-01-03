@@ -5,8 +5,21 @@
     width: 100%; /* image 100% width */
     height: auto; /* height image adjust automatically to maintain aspect ratio */
     display: block; /* image displayed as block elements, maintains its own space */
+    max-height: 500px; /* maximum height set for images to ensure it is not too large */
 }
 
+/* gallery container of all images in gallery */
+.gallery {
+    width: 90%; /* set width of gallery container */
+    margin: auto; /* centers gallery container on the page */
+}
+
+/* make sure gallery does not stretch too wide on larger screens */
+@media (min-width: 1200px){
+    .gallery {
+        width: 75%; /* Reduces the width of the gallery on larger screens */
+    }
+}
 
 /* other styles for website : */
 
