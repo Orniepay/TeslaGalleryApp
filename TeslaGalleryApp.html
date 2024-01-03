@@ -1,3 +1,5 @@
+<!-- HTML file -->
+
 <!-- https://TeslaGalleryApp.com/submit-tesla-photo -->
 
 <!DOCTYPE html> <!-- All pages should begin with this, special string is known as a declaration, ensuring browser meets industry-wide specifications -->
@@ -7,15 +9,18 @@
 <head>
     <meta charset = "UTF-8"> <!-- tell browser to parse markup into multiple languages by creating a meta element as a child of the head element, set charset attribute to vale UTF-8 -->
     <title>TeslaGalleryApp</title>
+
+    <!-- Link to CSS file -->
+    <link rel = "teslasheet" href = "TeslaGalleryApp.css">
+
+   <!-- Flickity CSS -->
+    <link rel = "teslasheet" href = "https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css" />
+
 </head>
 
 <body> <!-- html body element opening -->
 
 <main> <!-- main element opening -->
-
-    <footer> <!-- footer element -->
-        <p> No Copyright - <a href = "https://TeslaGalleryApp.com"> Orn TeslaGalleryApp </a> </p>
-    </footer>
 
     <h1>Tesla Gallery App</h1> <!-- header element -->
 
@@ -43,8 +48,31 @@
 
         <h2>Tesla Inventory Gallery :</h2>
 
-        <h3>Tesla Model S :</h3>
+        <section id = "tesla-model-s">
 
+        <h1>Tesla Model S :</h1>
+
+
+            <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true }'>
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/700/1074743.jpg" alt = "Tesla Model S">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/700/1074738.jpg" alt = "Tesla Model S">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/700/1074739.jpg" alt = "Tesla Model S">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/700/1074741.jpg" alt = "Tesla Model S">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/700/1074742.jpg" alt = "Tesla Model S">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/700/1074727.jpg" alt = "Tesla Model S">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/700/1074730.jpg" alt = "Tesla Model S">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/700/1074731.jpg" alt = "Tesla Model S">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/700/1074732.jpg" alt = "Tesla Model S">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/700/1074733.jpg" alt = "Tesla Model S">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/800/1074838.jpg" alt = "Tesla Model S">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/800/1074844.jpg" alt = "Tesla Model S">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/800/1074846.jpg" alt = "Tesla Model S">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/800/1074847.jpg" alt = "Tesla Model S">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/800/1074848.jpg" alt = "Tesla Model S">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/800/1074849.jpg" alt = "Tesla Model S">
+            </div>
+
+            <!-- TESLA MODEL S IMAGES
         <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/700/1074743.jpg" alt = "Tesla Model S">
         <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/700/1074738.jpg" alt = "Tesla Model S">
         <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/700/1074739.jpg" alt = "Tesla Model S">
@@ -61,104 +89,154 @@
         <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/800/1074847.jpg" alt = "Tesla Model S">
         <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/800/1074848.jpg" alt = "Tesla Model S">
         <img src = "https://cdn.carbuzz.com/gallery-images/1600/1074000/800/1074849.jpg" alt = "Tesla Model S">
+            -->
+        </section>
+
+        <!-- -->
 
 
-        <h3>Tesla Model 3 :</h3>
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/406000/700/406744.jpg" alt = "Tesla Model 3">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847700.jpg" alt = "Tesla Model 3">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847716.jpg" alt = "Tesla Model 3">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/406000/700/406737.jpg" alt = "Tesla Model 3">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/406000/700/406739.jpg" alt = "Tesla Model 3">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/406000/700/406741.jpg" alt = "Tesla Model 3">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/406000/700/406740.jpg" alt = "Tesla Model 3">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/547000/500/547537.jpg" alt = "Tesla Model 3">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847704.jpg" alt = "Tesla Model 3">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847707.jpg" alt = "Tesla Model 3">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847701.jpg" alt = "Tesla Model 3">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/406000/700/406743.jpg" alt = "Tesla Model 3">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847713.jpg" alt = "Tesla Model 3">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847712.jpg" alt = "Tesla Model 3">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847714.jpg" alt = "Tesla Model 3">
+        <section id = "tesla-model-3">
 
+        <h1>Tesla Model 3 :</h1>
 
-        <h3>Tesla Model X :</h3>
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1079000/800/1079860.jpg" alt = "Tesla Model X">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1079000/800/1079861.jpg" alt = "Tesla Model X">
-        <img src = "https://cdn.carbuzz.com/gallery-images/840x560/814000/100/814192.jpg" alt = "Tesla Model X">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1079000/800/1079864.jpg" alt = "Tesla Model X">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/814000/100/814197.jpg" alt = "Tesla Model X">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/814000/100/814198.jpg" alt = "Tesla Model X">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/814000/100/814199.jpg" alt = "Tesla Model X">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/814000/200/814200.jpg" alt = "Tesla Model X">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/814000/200/814201.jpg" alt = "Tesla Model X">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/814000/200/814202.jpg" alt = "Tesla Model X">
-        <img src = "https://cdn.carbuzz.com/gallery-images/840x560/1085000/800/1085817.jpg" alt = "Tesla Model X">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/814000/200/814203.jpg" alt = "Tesla Model X">
-        <img src = "https://cdn.carbuzz.com/gallery-images/840x560/814000/100/814196.jpg" alt = "Tesla Model X">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/814000/200/814204.jpg" alt = "Tesla Model X">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/814000/200/814205.jpg" alt = "Tesla Model X">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1079000/800/1079859.jpg" alt = "Tesla Model X">
+            <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true }'>
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/406000/700/406744.jpg" alt = "Tesla Model 3">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847700.jpg" alt = "Tesla Model 3">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847716.jpg" alt = "Tesla Model 3">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/406000/700/406737.jpg" alt = "Tesla Model 3">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/406000/700/406739.jpg" alt = "Tesla Model 3">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/406000/700/406741.jpg" alt = "Tesla Model 3">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/406000/700/406740.jpg" alt = "Tesla Model 3">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/547000/500/547537.jpg" alt = "Tesla Model 3">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847704.jpg" alt = "Tesla Model 3">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847707.jpg" alt = "Tesla Model 3">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847701.jpg" alt = "Tesla Model 3">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/406000/700/406743.jpg" alt = "Tesla Model 3">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847713.jpg" alt = "Tesla Model 3">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847712.jpg" alt = "Tesla Model 3">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847714.jpg" alt = "Tesla Model 3">
+            </div>
 
+        </section>
 
-        <h3>Tesla Model Y :</h3>
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1077000/900/1077930.jpg" alt = "Tesla Model Y">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/702000/500/702530.jpg" alt = "Tesla Model Y">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/702000/500/702528.jpg" alt = "Tesla Model Y">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/559000/100/559159.jpg" alt = "Tesla Model Y">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/600/847688.jpg" alt = "Tesla Model Y">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/600/847690.jpg" alt = "Tesla Model Y">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/600/847689.jpg" alt = "Tesla Model Y">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/600/847692.jpg" alt = "Tesla Model Y">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/600/847694.jpg" alt = "Tesla Model Y">
+        <!-- -->
 
+        <section id = "tesla-model-x">
 
-        <h3>Tesla Roadster :</h3>
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847780.jpg" alt = "Tesla Roadster">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/523000/700/523778.jpg" alt = "Tesla Roadster">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/523000/700/523793.jpg" alt = "Tesla Roadster">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/523000/700/523786.jpg" alt = "Tesla Roadster">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/523000/700/523792.jpg" alt = "Tesla Roadster">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/523000/700/523794.jpg" alt = "Tesla Roadster">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/523000/700/523790.jpg" alt = "Tesla Roadster">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/523000/700/523780.jpg" alt = "Tesla Roadster">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/523000/700/523788.jpg" alt = "Tesla Roadster">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/523000/700/523784.jpg" alt = "Tesla Roadster">
+        <h1>Tesla Model X :</h1>
 
+            <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true }'>
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1079000/800/1079860.jpg" alt = "Tesla Model X">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1079000/800/1079861.jpg" alt = "Tesla Model X">
+                <img src = "https://cdn.carbuzz.com/gallery-images/840x560/814000/100/814192.jpg" alt = "Tesla Model X">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1079000/800/1079864.jpg" alt = "Tesla Model X">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/814000/100/814197.jpg" alt = "Tesla Model X">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/814000/100/814198.jpg" alt = "Tesla Model X">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/814000/100/814199.jpg" alt = "Tesla Model X">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/814000/200/814200.jpg" alt = "Tesla Model X">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/814000/200/814201.jpg" alt = "Tesla Model X">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/814000/200/814202.jpg" alt = "Tesla Model X">
+                <img src = "https://cdn.carbuzz.com/gallery-images/840x560/1085000/800/1085817.jpg" alt = "Tesla Model X">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/814000/200/814203.jpg" alt = "Tesla Model X">
+                <img src = "https://cdn.carbuzz.com/gallery-images/840x560/814000/100/814196.jpg" alt = "Tesla Model X">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/814000/200/814204.jpg" alt = "Tesla Model X">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/814000/200/814205.jpg" alt = "Tesla Model X">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1079000/800/1079859.jpg" alt = "Tesla Model X">
+            </div>
 
-        <h3>Tesla Cybertruck :</h3>
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206241.jpg" alt = "Tesla Cybertruck">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206243.jpg" alt = "Tesla Cybertruck">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/651000/500/651531.jpg" alt = "Tesla Cybertruck">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206239.jpg" alt = "Tesla Cybertruck">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206255.jpg" alt = "Tesla Cybertruck">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206240.jpg" alt = "Tesla Cybertruck">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206250.jpg" alt = "Tesla Cybertruck">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847797.jpg" alt = "Tesla Cybertruck">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206248.jpg" alt = "Tesla Cybertruck">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206254.jpg" alt = "Tesla Cybertruck">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206251.jpg" alt = "Tesla Cybertruck">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206249.jpg" alt = "Tesla Cybertruck">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206253.jpg" alt = "Tesla Cybertruck">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/800/847808.jpg" alt = "Tesla Cybertruck">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206257.jpg" alt = "Tesla Cybertruck">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206259.jpg" alt = "Tesla Cybertruck">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/800/847809.jpg" alt = "Tesla Cybertruck">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206247.jpg" alt = "Tesla Cybertruck">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/800/847803.jpg" alt = "Tesla Cybertruck">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206260.jpg" alt = "Tesla Cybertruck">
+        </section>
 
+        <!-- -->
 
-        <h3>Tesla Semi :</h3>
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1033000/900/1033967.jpg" alt = "Tesla Semi">
-        <img src = "https://cdn.carbuzz.com/gallery-images/840x560/1033000/900/1033963.jpg" alt = "Tesla Semi">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1033000/900/1033970.jpg" alt = "Tesla Semi">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1033000/900/1033973.jpg" alt = "Tesla Semi">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1033000/900/1033977.jpg" alt = "Tesla Semi">
-        <img src = "https://cdn.carbuzz.com/gallery-images/1600/1033000/900/1033976.jpg" alt = "Tesla Semi">
-        <img src = "https://cdn.carbuzz.com/gallery-images/840x560/1077000/500/1077577.jpg" alt = "Tesla Semi">
+        <section id = "tesla-model-y">
 
+        <h1>Tesla Model Y :</h1>
+
+            <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true }'>
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1077000/900/1077930.jpg" alt = "Tesla Model Y">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/702000/500/702530.jpg" alt = "Tesla Model Y">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/702000/500/702528.jpg" alt = "Tesla Model Y">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/559000/100/559159.jpg" alt = "Tesla Model Y">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/600/847688.jpg" alt = "Tesla Model Y">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/600/847690.jpg" alt = "Tesla Model Y">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/600/847689.jpg" alt = "Tesla Model Y">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/600/847692.jpg" alt = "Tesla Model Y">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/600/847694.jpg" alt = "Tesla Model Y">
+            </div>
+
+        </section>
+
+        <!-- -->
+
+        <section id = "tesla-roadster">
+
+        <h1>Tesla Roadster :</h1>
+
+            <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true }'>
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847780.jpg" alt = "Tesla Roadster">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/523000/700/523778.jpg" alt = "Tesla Roadster">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/523000/700/523793.jpg" alt = "Tesla Roadster">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/523000/700/523786.jpg" alt = "Tesla Roadster">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/523000/700/523792.jpg" alt = "Tesla Roadster">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/523000/700/523794.jpg" alt = "Tesla Roadster">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/523000/700/523790.jpg" alt = "Tesla Roadster">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/523000/700/523780.jpg" alt = "Tesla Roadster">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/523000/700/523788.jpg" alt = "Tesla Roadster">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/523000/700/523784.jpg" alt = "Tesla Roadster">
+            </div>
+
+        </section>
+
+        <!-- -->
+
+        <section id = "tesla-cybertruck">
+
+        <h1>Tesla Cybertruck :</h1>
+
+            <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true }'>
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206241.jpg" alt = "Tesla Cybertruck">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206243.jpg" alt = "Tesla Cybertruck">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/651000/500/651531.jpg" alt = "Tesla Cybertruck">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206239.jpg" alt = "Tesla Cybertruck">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206255.jpg" alt = "Tesla Cybertruck">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206240.jpg" alt = "Tesla Cybertruck">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206250.jpg" alt = "Tesla Cybertruck">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847797.jpg" alt = "Tesla Cybertruck">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206248.jpg" alt = "Tesla Cybertruck">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206254.jpg" alt = "Tesla Cybertruck">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206251.jpg" alt = "Tesla Cybertruck">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206249.jpg" alt = "Tesla Cybertruck">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206253.jpg" alt = "Tesla Cybertruck">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/800/847808.jpg" alt = "Tesla Cybertruck">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206257.jpg" alt = "Tesla Cybertruck">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206259.jpg" alt = "Tesla Cybertruck">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/800/847809.jpg" alt = "Tesla Cybertruck">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206247.jpg" alt = "Tesla Cybertruck">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/800/847803.jpg" alt = "Tesla Cybertruck">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206260.jpg" alt = "Tesla Cybertruck">
+            </div>
+
+        </section>
+
+        <!-- -->
+
+        <section id = "tesla-semi">
+
+        <h1>Tesla Semi :</h1>
+
+            <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true }'>
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1033000/900/1033967.jpg" alt = "Tesla Semi">
+                <img src = "https://cdn.carbuzz.com/gallery-images/840x560/1033000/900/1033963.jpg" alt = "Tesla Semi">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1033000/900/1033970.jpg" alt = "Tesla Semi">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1033000/900/1033973.jpg" alt = "Tesla Semi">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1033000/900/1033977.jpg" alt = "Tesla Semi">
+                <img src = "https://cdn.carbuzz.com/gallery-images/1600/1033000/900/1033976.jpg" alt = "Tesla Semi">
+                <img src = "https://cdn.carbuzz.com/gallery-images/840x560/1077000/500/1077577.jpg" alt = "Tesla Semi">
+            </div>
+        </section>
+<!-- -->
     </section> <!-- section element closing -->
-
+<!-- -->
 
     <!-- new section element -->
     <section>
@@ -247,6 +325,15 @@
     </form>
 
 </main> <!-- main element closing -->
+
+<footer> <!-- footer element -->
+    <p> No Copyright - <a href = "https://TeslaGalleryApp.com"> Orn TeslaGalleryApp </a> </p>
+</footer>
+
+<!-- Flickity JS -->
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+<script src = "TeslaGalleryApp.js"></script>
+
 
 </body> <!-- html body element closing -->
 

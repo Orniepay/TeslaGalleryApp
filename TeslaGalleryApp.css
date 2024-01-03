@@ -1,0 +1,30 @@
+/* CSS File */
+
+/* flickity gallery custom styles */
+.gallery img{
+    width: 100%; /* image 100% width */
+    height: auto; /* height image adjust automatically to maintain aspect ratio */
+    display: block; /* image displayed as block elements, maintains its own space */
+}
+
+
+/* other styles for website : */
+
+body{
+    font-family: 'Times New Roman', sans-serif; /* default font for website is times new roman, fall back to sans serif font */
+}
+
+
+h1, h2, h3 {
+    color: #333 /* text color set for all h1, h2, h3 headers to a dark grey */
+}
+
+footer {
+    text-align: center; /* centers context inside the footer */
+    margin-top: 20px; /* adds 20 pixels space above the footer */
+}
+
+/* Add more custom styles as needed */
+
+
+/* Do Not Forget to Link CSS File to HTML File (how could you haha?)->(yep i def will) */
