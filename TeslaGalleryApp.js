@@ -15,3 +15,10 @@ document.addEventListener('DOMContentLoaded', function(){
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    var iframe = document.querySelector('.video-background iframe');
+    iframe.onload = function () {
+        iframe.style.display = 'block'
+    };
+});
