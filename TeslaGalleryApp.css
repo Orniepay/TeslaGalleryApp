@@ -4,7 +4,9 @@
 .gallery img{
     width: 100%; /* image 100% width */
     height: auto; /* height image adjust automatically to maintain aspect ratio */
-    display: block; /* image displayed as block elements, maintains its own space */
+    object-fit: contain; /* image scales to fit the container without stretching */
+    /* display: block; */ /* image displayed as block elements, maintains its own space */
+    max-width: 100%; /* make sure image does not exceed gallery container */
     max-height: 500px; /* maximum height set for images to ensure it is not too large */
 }
 
@@ -12,6 +14,7 @@
 .gallery {
     width: 90%; /* set width of gallery container */
     margin: auto; /* centers gallery container on the page */
+    overflow: hidden; /* hid any part of image overflow gallery container */
 }
 
 /* make sure gallery does not stretch too wide on larger screens */
