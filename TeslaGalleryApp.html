@@ -8,6 +8,9 @@
 
 <head>
     <meta charset = "UTF-8"> <!-- tell browser to parse markup into multiple languages by creating a meta element as a child of the head element, set charset attribute to vale UTF-8 -->
+
+    <meta name = "viewport" content = "width = device - width, initial - scale = 1">
+
     <title>TeslaGalleryApp</title>
 
     <!-- Link to CSS file -->
@@ -19,6 +22,19 @@
 </head>
 
 <body> <!-- html body element opening -->
+
+<header class = "navbar">
+    <div class = "logo">TESLA GALLERY</div>
+    <nav>
+        <a href = "#tesla-model-s">MODEL S</a>
+        <a href = "#tesla-model-3">MODEL 3</a>
+        <a href = "#tesla-model-x">MODEL X</a>
+        <a href = "#tesla-model-y">MODEL Y</a>
+        <a href = "#tesla-roadster">ROADSTER</a>
+        <a href = "#tesla-cybertruck">CYBERTRUCK</a>
+        <a href = "#tesla-semi">SEMI</a>
+    </nav>
+</header>
 
 <main> <!-- main element opening -->
 
@@ -32,7 +48,10 @@
         <p>See more <a href = "https://www.tesla.com/tesla-gallery" target = "_blank">Tesla photos</a> in tesla official vehicle gallery.</p> <!-- paragraph element -->
         <!-- <a href = "https://www.tesla.com/tesla-gallery">tesla photos</a> -->
 
-        <a href = 'https://www.tesla.com/tesla-gallery'>View Tesla Official Vehicle Gallery</a><br><br> <!-- <br> is a new line character basically -->
+        <a href = 'https://www.tesla.com/tesla-gallery'>View Tesla Official Vehicle Gallery</a>
+        <!-- <br> is a new line character basically : <br><br> can use for double new line space -->
+        <p> "All images and rights thereto remain the property of Tesla, Inc." </p>
+        <p>  "Courtesy of Tesla, Inc." </p>
 
         <a href = 'https://carbuzz.com/cars/tesla'>View Car Buzz Tesla Vehicle Gallery</a>
 
@@ -232,10 +251,12 @@
         </ul>
 
         <figure> <!-- element represents self-contained content allowing association of an image with a caption -->
+            <figure class = "tesla-feature-image">
             <img src = "https://images.drive.com.au/driveau/image/upload/c_fill,f_auto,g_auto,h_1080,q_auto:eco,w_1920/v1/cms/uploads/vfeFmRjQEyKqFfb9y6Yg" alt = "Tesla Enhanced Autopilot & Full Self-Driving Capability">
             <img src = "https://electrek.co/wp-content/uploads/sites/3/2022/06/Screen-Shot-2022-06-24-at-5.25.58-AM.jpg?resize=1024,512" alt = "Tesla Enhanced Autopilot & Full Self-Driving Capability">
             <img src = "https://www.teslarati.com/wp-content/uploads/2022/06/tesla-enhanced-autopilot-release-price-1024x557.jpg" alt = "Tesla Enhanced Autopilot & Full Self-Driving Capability">
             <figcaption>Tesla's <em>advanced driver-assistance systems, enhanced autopilot and full self-driving packages</em> with associated costs and functionalities.</figcaption> <!-- element used to add a caption to describe the image contained within the figure element -->
+            </figure>
         </figure>    <!-- emphasize element is like italic font -->
 
         <h3>Exclusive Features of Tesla Vehicles :</h3>
@@ -246,9 +267,11 @@
         </ol>
 
         <figure>
+            <figure class = "tesla-feature-image">
             <img src = "https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_718/https://smartairfilters.com/wordpress/wp-content/uploads/2017/12/Tesla-Test.png" alt = "Tesla bio-weapon defense mode">
             <img src = "https://electrek.co/wp-content/uploads/sites/3/2021/01/S_Glass_Roof.jpeg" alt = "Tesla luxurious, spacious, modern cabin design">
             <figcaption>Air Purification Efficiency, Modern Design and Enhanced Regenerative Braking: <strong>Few of Tesla's Many Exclusive Advantages of a High-Tech, Luxurious and Performance Seeking Vehicles</strong></figcaption>
+            </figure>
         </figure> <!-- strong element is like bold font -->
 
 
@@ -260,8 +283,8 @@
 
 
     <!-- add a web form to collect information from users -->
-    <h3>Tesla Form</h3>
-    <p>Submit a photo of your Tesla!</p>
+    <h3>Tesla Community Form :</h3>
+    <p>Share a photo of your Tesla!</p>
     <!-- <form action = "/submit-url"> </form> : tells the browser that the form data should be sent to the path "/submit-url" -->
     <form action = "https://TeslaGalleryApp.com/submit-tesla-photo">
         <!-- many kinds up input can be created using type attribute : password field, reset button, control that lets user select a file from computer -->

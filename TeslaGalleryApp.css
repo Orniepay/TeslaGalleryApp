@@ -1,12 +1,37 @@
 /* CSS File */
 
+/* general styles */
+body{
+    font-family: 'sans-serif', Roboto; /* default font for website is times new roman, fall back to sans serif font */
+    color: #333;
+    background-color: #F4F4F4;
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation bar */
+.navbar {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* gallery styles */
 /* flickity gallery custom styles */
 .gallery img{
     width: 100%; /* image 100% width */
     height: auto; /* height image adjust automatically to maintain aspect ratio */
     object-fit: contain; /* image scales to fit the container without stretching */
     /* display: block; */ /* image displayed as block elements, maintains its own space */
-    max-width: 100%; /* make sure image does not exceed gallery container */
+    /* max-width: 100%; */ /* make sure image does not exceed gallery container */
     max-height: 500px; /* maximum height set for images to ensure it is not too large */
 }
 
@@ -24,11 +49,24 @@
     }
 }
 
-/* other styles for website : */
-
-body{
-    font-family: 'Times New Roman', sans-serif; /* default font for website is times new roman, fall back to sans serif font */
+img {
+    max-width: 100%;
+    height: auto;
 }
+
+@media (max-width: 768px){
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar a {
+        margin: 5px 0;
+    }
+    .gallery {
+        width: 100%;
+    }
+}
+/* other styles for website : ... ... ... */
 
 
 h1, h2, h3 {
@@ -38,6 +76,17 @@ h1, h2, h3 {
 footer {
     text-align: center; /* centers context inside the footer */
     margin-top: 20px; /* adds 20 pixels space above the footer */
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-top: 1px solid #DDDDDD;
+}
+
+.tesla-feature-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Add more custom styles as needed */
