@@ -23,17 +23,24 @@
 
 <body> <!-- html body element opening -->
 
-<header class = "navbar">
-    <div class = "logo">TESLA GALLERY</div>
-    <nav>
-        <a href = "#tesla-model-s">MODEL S</a>
-        <a href = "#tesla-model-3">MODEL 3</a>
-        <a href = "#tesla-model-x">MODEL X</a>
-        <a href = "#tesla-model-y">MODEL Y</a>
-        <a href = "#tesla-roadster">ROADSTER</a>
-        <a href = "#tesla-cybertruck">CYBERTRUCK</a>
-        <a href = "#tesla-semi">SEMI</a>
-    </nav>
+<header class = "site-header">
+    <div class = "header-top">
+        <span>TESLA GALLERY APP</span>
+    </div>
+        <nav class = "site-navigation">
+            <a href = "https://www.tesla.com" class = "logo">T E S L A</a>
+            <ul>
+                <li><a href = "#tesla-model-s">MODEL S</a></li>
+                <li><a href = "#tesla-model-3">MODEL 3</a></li>
+                <li><a href = "#tesla-model-x">MODEL X</a></li>
+                <li><a href = "#tesla-model-y">MODEL Y</a></li>
+                <li><a href = "#tesla-roadster">ROADSTER</a></li>
+                <li><a href = "#tesla-cybertruck">CYBERTRUCK</a></li>
+                <li><a href = "#tesla-semi">SEMI</a></li>
+            </ul>
+            <div class = "header-controls">
+            </div>
+        </nav>
 </header>
 
 <main> <!-- main element opening -->
@@ -50,8 +57,8 @@
 
         <a href = 'https://www.tesla.com/tesla-gallery'>View Tesla Official Vehicle Gallery</a>
         <!-- <br> is a new line character basically : <br><br> can use for double new line space -->
-        <p> "All images and rights thereto remain the property of Tesla, Inc." </p>
-        <p>  "Courtesy of Tesla, Inc." </p>
+        <p> <strong> <em> "All images and rights thereto remain the property of Tesla, Inc." </em> </strong>  </p>
+        <p> <strong> <em> "Courtesy of Tesla, Inc." </em> </strong> </p>
 
         <a href = 'https://carbuzz.com/cars/tesla'>View Car Buzz Tesla Vehicle Gallery</a>
 
@@ -67,9 +74,11 @@
 
         <h2>Tesla Inventory Gallery :</h2>
 
-        <section id = "tesla-model-s">
+        <section id = "tesla-model-s" class = "model-section">
 
-        <h1>Tesla Model S :</h1>
+            <div class = "centered-header">
+            <h1>Tesla Model S :</h1>
+            </div>
 
 
             <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true }'>
@@ -97,7 +106,9 @@
 
         <section id = "tesla-model-3">
 
-        <h1>Tesla Model 3 :</h1>
+            <div class = "centered-header">
+                <h1>Tesla Model 3 :</h1>
+            </div>
 
             <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true }'>
                 <img src = "https://cdn.carbuzz.com/gallery-images/1600/406000/700/406744.jpg" alt = "Tesla Model 3">
@@ -123,7 +134,10 @@
 
         <section id = "tesla-model-x">
 
-        <h1>Tesla Model X :</h1>
+            <div class = "centered-header">
+                <h1>Tesla Model X :</h1>
+            </div>
+
 
             <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true }'>
                 <img src = "https://cdn.carbuzz.com/gallery-images/1600/1079000/800/1079860.jpg" alt = "Tesla Model X">
@@ -150,7 +164,9 @@
 
         <section id = "tesla-model-y">
 
-        <h1>Tesla Model Y :</h1>
+            <div class = "centered-header">
+                <h1>Tesla Model Y :</h1>
+            </div>
 
             <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true }'>
                 <img src = "https://cdn.carbuzz.com/gallery-images/1600/1077000/900/1077930.jpg" alt = "Tesla Model Y">
@@ -170,7 +186,9 @@
 
         <section id = "tesla-roadster">
 
-        <h1>Tesla Roadster :</h1>
+            <div class = "centered-header">
+                <h1>Tesla Roadster :</h1>
+            </div>
 
             <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true }'>
                 <img src = "https://cdn.carbuzz.com/gallery-images/1600/847000/700/847780.jpg" alt = "Tesla Roadster">
@@ -191,7 +209,9 @@
 
         <section id = "tesla-cybertruck">
 
-        <h1>Tesla Cybertruck :</h1>
+            <div class = "centered-header">
+                <h1>Tesla Cybertruck :</h1>
+            </div>
 
             <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true }'>
                 <img src = "https://cdn.carbuzz.com/gallery-images/1600/1206000/200/1206241.jpg" alt = "Tesla Cybertruck">
@@ -222,7 +242,9 @@
 
         <section id = "tesla-semi">
 
-        <h1>Tesla Semi :</h1>
+            <div class = "centered-header">
+                <h1>Tesla Semi :</h1>
+            </div>
 
             <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true }'>
                 <img src = "https://cdn.carbuzz.com/gallery-images/1600/1033000/900/1033967.jpg" alt = "Tesla Semi">
@@ -241,6 +263,8 @@
     <!-- new section element -->
     <section>
 
+        <br><br><br><br>
+        <h2>Random Interesting Tesla Details</h2>
         <h3>Tesla Vehicle Features</h3>
         <h4>Things Tesla Vehicles Offer :</h4>
         <ul> <!-- unordered list element -->
