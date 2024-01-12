@@ -1,6 +1,9 @@
 /* CSS File */
 
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 /* general styles */
 body, html {
@@ -16,6 +19,16 @@ body, html {
 /* full screen video background like tesla and porsche browser : */
 
 /* testing */
+
+.full-screen-video-header video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 
 .full-screen-video-header {
     position: relative;
