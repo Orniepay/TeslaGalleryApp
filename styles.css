@@ -87,7 +87,7 @@ body, html {
 }
 
 .site-navigation {
-    position: fixed;
+    position: absolute;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -115,7 +115,7 @@ body, html {
 }
 
 .site-navigation ul li a {
-    color: #fff;
+    color: #f8fafc;
     text-transform: uppercase;
     font-weight: bold;
     margin: 0 15px;
