@@ -1,12 +1,14 @@
 /* CSS File */
 
+
+
 /* general styles */
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; /* default font for website is arial, fall back to sans serif font */
+    font-family: "Times New Roman", sans-serif; /* default font for website is arial, fall back to sans serif font */
     /* color: #333; */
-    background-color: #fff;
+    background-color: #f8fafc;
 }
 
 
@@ -14,11 +16,12 @@ body, html {
 /* full screen video background like tesla and porsche browser : */
 
 /* testing */
+
 .full-screen-video-header {
     position: relative;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+    height: 100vh; /* Full height */
+    width: 100vw; /* Full width */
+    overflow: hidden; /* Hide the overflow */
 }
 
 .video-background {
@@ -32,16 +35,13 @@ body, html {
 
 .video-background iframe {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
-    transform: translate(-50%, -50%);
     border: none;
-}
-
-.overlay {
-    /* ... existing styles ... */
+    object-fit: cover; /* This will make sure that the video covers the whole area */
+    /* Remove transform translate as it's not needed when width and height are 100% */
 }
 
 /* testing */
@@ -65,19 +65,21 @@ body, html {
 }
 
 .site-header {
-    background-color: #000000; /* black background */
+    background-color: #030712; /* black background */
     color: #fff; /* white text color */
 }
 
 .header-top {
     font-weight: bold;
     text-align: center;
-    font-size: 14px;
+    font-size: px;
     padding: 5px 0;
+    
 }
 
 .header-top span {
     color: #fff;
+    
 }
 
 .header-top a {
@@ -85,10 +87,18 @@ body, html {
 }
 
 .site-navigation {
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 0px;
+    height: 80px;
+    color: #fff;
+    z-index: 1000;
+    text-decoration: none;
 }
 
 .site-navigation .loop {
@@ -98,10 +108,10 @@ body, html {
 }
 
 .site-navigation ul {
-    list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
+    list-style: none;
+    gap: 20px;
+    font-size: 20px;
 }
 
 .site-navigation ul li a {
@@ -109,13 +119,20 @@ body, html {
     text-transform: uppercase;
     font-weight: bold;
     margin: 0 15px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .site-navigation ul li a:hover {
-    text-decoration: none;
-    color: #ccc
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
+.logo {
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    padding-bottom: 46px;
+  }
 
 .header-controls {
     /* Style your header controls (e.g., search, account, cart icons) here */
@@ -146,6 +163,7 @@ body, html {
     background-color: #333;
     padding: 10px 0;
     margin-bottom: 20px;
+    
 }
 
 .main-nav a {
