@@ -1,5 +1,23 @@
 //JS file
 
+window.onload = function() {
+    // Flickity galleries initialization
+    var galleries = document.querySelectorAll('.js-flickity');
+    galleries.forEach(function(gallery) {
+        new Flickity(gallery, {
+            cellAlign: 'left',
+            contain: true,
+            wrapAround: true,
+            autoPlay: 0,
+            pauseAutoPlayOnHover: true
+        });
+    });
+
+    // Video iframe display
+    var iframe = document.querySelector('.video-background iframe');
+    iframe.style.display = 'block';
+};
+
 //wait for entire HTML to be fully loaded and parsed
 document.addEventListener('DOMContentLoaded', function(){
     var galleries = document.querySelectorAll('.js-flickity'); //selects all photos/elements that have class '.js-flickity'
@@ -22,3 +40,4 @@ document.addEventListener('DOMContentLoaded', function () {
         iframe.style.display = 'block'
     };
 });
+
