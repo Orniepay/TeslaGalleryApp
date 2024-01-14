@@ -17,7 +17,22 @@ body, html {
     color: white;
 }
 
+.carousel{
+    margin-top: 8%;
+}
+.carousel-cell{
+    width: 56%;
+    height: 500px;
+    margin-right: 10px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center center;   
+}
+.carousel-cell:before{
+    display: block;
+    content: '';
 
+}
 
 /* full screen video background like tesla and porsche browser : */
 

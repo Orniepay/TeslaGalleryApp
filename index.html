@@ -12,12 +12,11 @@
     <meta name = "viewport" content = "width = device - width, initial - scale = 1">
 
     <title>TeslaGalleryApp</title>
+    <!-- Flickity CSS -->
+    <link rel = "stylesheet" href = "https://unpkg.com/flickity@2/dist/flickity.min.css"/>
 
     <!-- Link to CSS file -->
     <link rel = "stylesheet" href = "styles.css">
-
-    <!-- Flickity CSS -->
-    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css" />
 
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
@@ -64,123 +63,6 @@
     </video>
 </header>
 
-
-<!-- TESLA SOURCE CODE FOR THEIR WEBSITE : 
-
-    <ul class="pages">
-      <li>
-        <video src="Images/Model-Y.mp4" muted autoplay loop></video>
-        <div id="model-y-info" class="page-info">
-          <h1>Model Y</h1>
-          <p>Lease starting at $399/mo*</p>
-        </div>
-        <div id="model-y-footer" class="page-footer">
-          <div class="buttons">
-            <button>Order Now</button>
-            <button>Demo Drive</button>
-          </div>
-          <p>
-            *Excludes taxes and fees with price subject to change.Available in select states.
-            <a href="#">See Details</a>
-          </p>
-        </div>
-      </li>
-
-      <li>
-        <img src="Images/Model-3.png" alt="Model 3" />
-        <div class="page-info">
-          <h1>Model 3</h1>
-          <p>Lease starting at $329/mo*</p>
-        </div>
-        <div class="page-footer">
-          <div class="buttons inverted">
-            <button>Order Now</button>
-            <button>Demo Drive</button>
-          </div>
-          <p>
-            *Excludes taxes and fees with price subject to change.Available in select states.
-            <a href="#">See Details</a>
-          </p>
-        </div>
-      </li>
-
-      <li>
-        <img src="Images/Model-X.png" alt="Model X" />
-        <div class="page-info model-x">
-          <h1>Model X</h1>
-          <h3>From $68,590*</h3>
-          <p>After Federal Tax Credit & Est. Gas Savings</p>
-        </div>
-        <div class="page-footer">
-          <div class="buttons inverted">
-            <button>Order Now</button>
-            <button>Demo Drive</button>
-          </div>
-          <p>
-            *Price before incentives and savings is $79,990, excluding taxes and fees. Subject to change<br />
-            <a href="#">Learn about est. gas savings.</a>
-          </p>
-        </div>
-      </li>
-
-      <li>
-        <img src="Images/Model-S.png" alt="Model S" />
-        <div class="page-info model-x">
-          <h1>Model S</h1>
-          <h3>From $71,090*</h3>
-          <p>After Est. Gas savings</p>
-        </div>
-        <div class="page-footer">
-          <div class="buttons inverted">
-            <button>Order Now</button>
-            <button>Demo Drive</button>
-          </div>
-          <p>
-            *Price before incentives and savings is $74,990, excluding taxes and fees. Subject to change<br />
-            <a href="#">Learn about est. gas savings.</a>
-          </p>
-        </div>
-      </li>
-
-      <li>
-        <video src="Images/Experience-Tesla.mp4" muted loop autoplay></video>
-        <div class="page-info">
-          <h1>Experience Tesla</h1>
-          <p>Schedule a Demo Drive Today</p>
-        </div>
-        <div class="page-footer">
-          <div class="buttons demo-drive">
-            <button>Demo Drive</button>
-          </div>
-        </div>
-      </li>
-    </ul>
-
-     <script>
-      setTimeout(() => {
-        document.getElementById("model-y-info").style.opacity = 1;
-        document.getElementById("model-y-info").style.transform = "translateY(0)";
-      }, 0);
-
-      setTimeout(() => {
-        document.getElementById("model-y-footer").style.opacity = 1;
-        document.getElementById("model-y-footer").style.transform = "translateY(0)";
-      }, 1000);
-    </script>
-
--->
-
-
-
-
-<!-- <header class = "full-screen-video-header">
-    <div class = "overlay"></div>
-    <div class = "video-background">
-        <iframe src="https://www.youtube.com/embed/_EEZ8oRE5Ug?autoplay=1&mute=1&loop=1&playlist=_EEZ8oRE5Ug&controls=0&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&fs=0" allowfullscreen></iframe>
-    </div>
-</header> -->
-
-
 <main> <!-- main element opening -->
     <div class = "centered-header">
     <h1>Tesla Gallery App</h1> <!-- header element -->
@@ -220,7 +102,8 @@
             </div>
         </div>
 
-            <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true }'>
+            <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true "autoplay" : true }'>
+            <div class = "carousel" data-flickity='{"autoplay": true}'></div>
                 <img src = "./public/tesla1.jpg" alt = "Tesla Model S">
                 <img src = "./public/tesla2.jpg" alt = "Tesla Model S">
                 <img src = "./public/tesla3.jpg" alt = "Tesla Model S">
@@ -237,6 +120,8 @@
                 <img src = "./public/tesla14.jpg" alt = "Tesla Model S">
                 <img src = "./public/tesla15.jpg" alt = "Tesla Model S">
             </div>
+
+            <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         </section>
 
         <!-- -->
@@ -248,7 +133,9 @@
                 <h1>Tesla Model 3 :</h1>
             </div>
 
-            <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true }'>
+           
+            <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true "autoplay" : true }'>
+              <div class = "carousel" data-flickity='{"autoplay": true}'></div>
                 <img src = "./public/tesla16.jpg" alt = "Tesla Model 3">
                 <img src = "./public/tesla17.jpg" alt = "Tesla Model 3">
                 <img src = "./public/tesla18.jpg" alt = "Tesla Model 3">
@@ -305,7 +192,8 @@
                 <h1>Tesla Model Y :</h1>
             </div>
 
-            <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true }'>
+            <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true "autoplay" : true }'>
+              <div class = "carousel" data-flickity='{"autoplay": true}'></div>
                 <img src = "./public/tesla47.jpg" alt = "Tesla Model Y">
                 <img src = "./public/tesla48.jpg" alt = "Tesla Model Y">
                 <img src = "./public/tesla49.jpg" alt = "Tesla Model Y">
@@ -327,7 +215,8 @@
                 <h1>Tesla Roadster :</h1>
             </div>
 
-            <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true }'>
+            <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true "autoplay" : true }'>
+              <div class = "carousel" data-flickity='{"autoplay": true}'></div>
                 <img src = "./public/tesla56.jpg" alt = "Tesla Roadster">
                 <img src = "./public/tesla57.jpg" alt = "Tesla Roadster">
                 <img src = "./public/tesla58.jpg" alt = "Tesla Roadster">
@@ -349,7 +238,8 @@
                 <h1>Tesla Cybertruck :</h1>
             </div>
 
-            <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true }'>
+            <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true "autoplay" : true }'>
+              <div class = "carousel" data-flickity='{"autoplay": true}'></div>
                 <img src = "./public/tesla65.jpg" alt = "Tesla Cybertruck">
                 <img src = "./public/tesla66.jpg" alt = "Tesla Cybertruck">
                 <img src = "./public/tesla67.jpg" alt = "Tesla Cybertruck">
@@ -381,7 +271,8 @@
                 <h1>Tesla Semi :</h1>
             </div>
 
-            <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true }'>
+            <div class = "gallery js-flickity" data-flickity-options = '{ "wrapAround" : true "autoplay" : true }'>
+              <div class = "carousel" data-flickity='{"autoplay": true}'></div>
                 <img src = "./public/tesla85.jpg" alt = "Tesla Semi">
                 <img src = "./public/tesla86.jpg" alt = "Tesla Semi">
                 <img src = "./public/tesla87.jpg" alt = "Tesla Semi">
@@ -397,6 +288,15 @@
 
 
     <!-- add a web form to collect information from users -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
     <h3>Tesla Community Form :</h3>
     <p>Share a photo of your Tesla!</p>
     <!-- <form action = "/submit-url"> </form> : tells the browser that the form data should be sent to the path "/submit-url" -->
