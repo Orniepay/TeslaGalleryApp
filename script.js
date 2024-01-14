@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function(){
             cellAlign: 'left',
             contain: true,
             wrapAround: true,
-            autoPlay: 0,
+            autoPlay: 3000,
             pauseAutoPlayOnHover: true,
             imagesLoaded: true // Ensure images are loaded before initializing Flickity
         });
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function(){
             cellAlign: 'left', //aligns images to left
             contain: true, //make sure slideshow not blank at start or end
             wrapAround: true, //allows slideshow to loop  back to beginning when it reaches end
-            autoPlay: 0, //automatically changes slides every millisecond (3 seconds = 3000)
+            autoPlay: 3000, //automatically changes slides every millisecond (3 seconds = 3000)
             pauseAutoPlayOnHover: true //stop changing slides when mouse hovers over the slideshow
         });
     });
